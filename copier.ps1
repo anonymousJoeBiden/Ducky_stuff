@@ -31,3 +31,4 @@ foreach ($i in 1..$c){
     Copy-Item -Path ($env:USERPROFILE + '\Downloads\o.ps1') -Destination ($env:USERPROFILE + '\Downloads\pse' + $i + '.ps1') -Force
     & ($env:USERPROFILE + '\Downloads\pse' + $i + '.ps1')
 }
+#end with 6* num of processors number of files
